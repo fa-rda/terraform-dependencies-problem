@@ -9,10 +9,10 @@ locals {
       name     = "b"
       duration = "14s"
     },
-    # {
-    #   name     = "c"
-    #   duration = "16s"
-    # },
+    {
+      name     = "c"
+      duration = "16s"
+    },
   ]
   backends_map = { for backend in local.backends : backend.name => backend }
 }
